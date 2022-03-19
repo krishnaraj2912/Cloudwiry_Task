@@ -1,11 +1,12 @@
-import './App.css';
 import TitleImage from './Components/TitleImage'
 import BodyText from './Components/BodyText'
 import SlackButton from './Components/SlackButton'
+import applyStyles from './Components/styles';
 
 function App() {
+  const classes = applyStyles()
   return (
-    <div className='flex'>
+    <div className={classes.appDiv}>
       <TitleImage />
       <BodyText />
       <SlackButton />
